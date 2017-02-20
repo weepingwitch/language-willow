@@ -1,0 +1,49 @@
+'scopeName': 'source.willow'
+'name': 'willow'
+'fileTypes': ['wlw']
+'patterns': [
+  {
+      'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+      'name': 'constant.numeric.willow'
+  },
+  {
+      'match': '\\b(fun)\\s+(\\w+)\\s*'
+      'captures':
+          '1':
+              'name': 'keyword.control.willow'
+          '2':
+              'name': 'entity.name.function.willow'
+      'name': 'meta.function.willow'
+  },
+
+
+      {
+          'match': '\\b(if|then|else|print|return|prompt|call|while|filein|fileout|random)'
+          'captures':
+              '1':
+                  'name': 'keyword.control.willow'
+          'name': 'meta.keyword.willow'
+      },
+        {
+            'match': '\\b(sysargs)'
+            'captures':
+                '1':
+                    'name': 'variable.language.sysargs.willow'
+            'name': 'meta.keyword.willow'
+        },
+  {
+      'begin': '\''
+      'end': '\''
+      'name': 'string.quoted.single.willow'
+  },
+  {
+      'begin': '\"'
+      'end': '\"'
+      'name': 'string.quoted.single.willow'
+  }
+    {
+        'begin': '\#'
+        'end': '\#'
+        'name': 'comment.block.willow'
+    }
+]
