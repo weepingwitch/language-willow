@@ -18,14 +18,14 @@
 
 
       {
-          'match': '\\b(if|then|else|print|return|prompt|call|while|filein|fileout|random)'
+          'match': '\\b(if|then|else|print|return|prompt|call|while|filein|fileout|random|floor|len)'
           'captures':
               '1':
                   'name': 'keyword.control.willow'
           'name': 'meta.keyword.willow'
       },
         {
-            'match': '\\b(sysargs)'
+            'match': '\\b(sysargs|fileloc)'
             'captures':
                 '1':
                     'name': 'variable.language.sysargs.willow'
