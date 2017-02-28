@@ -18,7 +18,7 @@
 
 
       {
-          'match': '\\b(if|then|else|print|return|prompt|call|while|filein|fileout|random|floor|len)'
+          'match': '\\b(if|then|else|print|return|prompt|call|while|filein|fileout|random|floor|len|include)'
           'captures':
               '1':
                   'name': 'keyword.control.willow'
